@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+
+    /* cor do site */
+    --Top-Header: #162028;
+    --texto-menu: #425564;
+    --textos: #555;
+    --fundo-box: #003d52;
+    --fundo-footer: #0b171f;
+    --texto-footer: #6f8597
+}
+
+body {
+    margin: 0;
+}
+
+.header-container {
+    background-color: var(--Top-Header);
+}
+
+.container-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-item__logo h2 {
+    padding: 0;
+    color: white;
+    letter-spacing: 1px;
+    margin: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 110px;
+    font-size: 3rem;
+}
+
+.container-item__navBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.container-item__navBar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    gap: 38px;
+    margin-right: 20px;
+
+}
+
+.container-item__navBar ul li a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--texto-menu);
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+    transition: .5s;
+    transition-property: all;
+    transition-duration: 2s;
+    
+}
+
+.container-item__navBar ul li a:hover {
+    color: #4e728e;
+    text-shadow: 2px 2px 22px white;
+    
+}
+
+.container-item__hero {
+    background-image: url(../imagens/topo.jpg);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover;
+    
+}
+
+/* estilo main*/
+
+.item-moda,
+.item-info-moda__moda{
+    margin: 0 auto 80px;
+    max-width: 800px;
+}
+
+.item-text-moda__title {
+    margin-top: 100px;
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: normal;
+}
+
+.item-text-moda__text {
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 30px;
+    color: var(--textos);
+}
+
+.item-moda-foto {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-moda-foto div {
+    text-align: center;
+}
+
+.item-moda-foto div img {
+    max-width: 210px;
+}
+
+.item-moda-foto div h2 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--textos);
+    margin-bottom: 8px;
+}
+
+.item-moda-foto div p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--textos);
+    margin: 0;
+}
+
+/*section info sobre moda*/
+
+.container-info-moda{
+    display: flex;
+    justify-content: center;
+    background-image: url(../imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom right;
+    background-size: cover;
+}
+
+.item-info-moda__title{
+    margin-top: 120px;
+    color: white;
+    font-size: 4.4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+.item-info-moda__text{
+    width: 600px;
+    font-size: 1.6rem;
+    line-height: 20px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: var(--fundo-footer);
+    padding: 12px;
+}
+footer p {
+    color: var(--texto-footer);
+    text-align: center;
+    font-size: 1.4rem;
+    letter-spacing: 3.4px;
+  
+}
